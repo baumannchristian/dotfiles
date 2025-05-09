@@ -1,0 +1,44 @@
+[user]
+  name = Christian Baumann
+
+[pull]
+  rebase = true
+
+[difftool]
+  prompt = true
+[diff]
+  colorMoved = default
+
+[difftool "nvimdiff"]
+  cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
+[mergetool]
+  prompt = false
+
+[merge]
+  ; tool = nvimdiff
+  conflictstyle = diff3
+
+[mergetool "nvimdiff"]
+  cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
+[core]
+  editor = nvim
+  pager = delta # https://dandavison.github.io/delta/
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  features = side-by-side line-numbers decorations
+  syntax-theme = Monokai Extended
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  navigate = true
+  line-numbers = true
+  decorations = true
+  side-by-side = true
+  width = 160
+
+[alias]
+  conflicts = diff --name-only --diff-filter=U
