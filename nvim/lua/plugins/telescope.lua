@@ -47,6 +47,7 @@ return {
             i = {
               ["<C-j>"] = actions.move_selection_next,
               ["<C-k>"] = actions.move_selection_previous,
+              ["<C-u>"] = actions.select_vertical,
             },
           },
           file_ignore_patterns = {
@@ -71,7 +72,7 @@ return {
             fuzzy = true,
             override_generic_sorter = true,
             override_file_sorter = true,
-            case_mode = "smart_case",
+            case_mode = "ignore_case",
           },
         },
       })
