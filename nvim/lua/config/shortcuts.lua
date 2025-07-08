@@ -26,3 +26,7 @@ vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("v", "<space>x", "<cmd>lua<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 
+vim.keymap.set('n', '<leader>cp', function()
+  vim.fn.setreg('+', vim.fn.expand('%:p:h'))
+end, { desc = 'Copy file path to clipboard' })
+
