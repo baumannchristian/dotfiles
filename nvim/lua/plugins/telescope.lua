@@ -49,6 +49,9 @@ return {
               ["<C-k>"] = actions.move_selection_previous,
               ["<C-u>"] = actions.select_vertical,
             },
+            n = {
+              ["<C-u>"] = actions.select_vertical,
+          },
           },
           file_ignore_patterns = {
             "node_modules", ".git"  -- no git internal and node_modules please
@@ -59,10 +62,10 @@ return {
           buffers = {
             mappings = {
               i = {
-                ["<C-q>"] = actions.delete_buffer
+                ["<C-q>"] = actions.delete_buffer,
               },
               n = {
-                ["<C-q>"] = actions.delete_buffer
+                ["<C-q>"] = actions.delete_buffer,
               }
             }
           }
