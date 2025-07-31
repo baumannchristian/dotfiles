@@ -3,7 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="cb"
 
-plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode)
 
 # tmux
 # ZSH_TMUX_AUTOSTART=true
