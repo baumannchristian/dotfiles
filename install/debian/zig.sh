@@ -1,11 +1,10 @@
-
 #!/bin/bash
 
 set -euo pipefail
 
 function up() {
   echo -e "[zig] Downloading zig..."
-  wget -q https://ziglang.org/builds/zig-linux-x86_64-0.15.0-dev.208+8acedfd5b.tar.xz -O /tmp/zig.tar.xz
+  wget -q https://ziglang.org/builds/zig-x86_64-linux-0.15.0-dev.1380+e98aeeb73.tar.xz -O /tmp/zig.tar.xz
 
   echo -e "[zig] Unpacking zig..."
   mkdir -p /home/$(whoami)/zig

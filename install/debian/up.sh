@@ -67,6 +67,6 @@ else
   installUps=($@)
 fi
 
-echo -e "\n"
+# echo -e "\n"
 
 ExecuteUps "${installUps[@]}"
